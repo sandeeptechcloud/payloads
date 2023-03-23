@@ -1,0 +1,92 @@
+#!/data/data/com.termux/files/usr/bin/bash
+
+# Set the text to display
+text=">>> Welcome to Sandeep Tech's Chat Bot <<<"
+echo
+# Set the speed of the text (in seconds)
+speed=0.1
+
+# Set the color of the text
+color=32 # 31 = red, 32 = green, 33 = yellow, 34 = blue, 35 = purple, 36 = cyan
+
+# Loop to display the text
+for i in $(seq 0 $(expr length "$text"));
+do
+    echo -en "\033[1;${color}m${text:$i:1}\033[0m"
+    sleep $speed
+done
+echo
+cd
+apt-get update &> /dev/null
+apt install wget &> /dev/null
+echo
+
+
+# Set the text to display
+text=">>> Installation Started <<<"
+echo
+# Set the speed of the text (in seconds)
+speed=0.1
+
+# Set the color of the text
+color=32 # 31 = red, 32 = green, 33 = yellow, 34 = blue, 35 =>
+
+# Loop to display the text
+for i in $(seq 0 $(expr length "$text"));
+do
+    echo -en "\033[1;${color}m${text:$i:1}\033[0m"
+    sleep $speed
+done
+echo
+echo
+echo "Connecting With Sandeep Tech's Server ......"; wget https://link.sandeeptechblogs.com/chat1 &> /dev/null
+cd
+mv chat1 ../usr/etc
+cd
+echo
+echo "Receiving Files From Sandeep Tech's Server ......"; wget https://link.sandeeptechblogs.com/chat &> /dev/null
+cd
+mv chat ../usr/bin
+cd
+chmod +x ../usr/bin/chat
+cd
+echo
+
+
+# Set the text to display
+text=">>> Installation Finished <<<"
+echo
+# Set the speed of the text (in seconds)
+speed=0.1
+
+# Set the color of the text
+color=32 # 31 = red, 32 = green, 33 = yellow, 34 = blue, 35 =>
+
+# Loop to display the text
+for i in $(seq 0 $(expr length "$text"));
+do
+    echo -en "\033[1;${color}m${text:$i:1}\033[0m"
+    sleep $speed
+done
+echo
+
+# Set the text to display
+text=">>> Just Type (chat) To Start My ChatGPT <<<"
+echo
+# Set the speed of the text (in seconds)
+speed=0.1
+
+# Set the color of the text
+color=32 # 31 = red, 32 = green, 33 = yellow, 34 = blue, 35 = purple, 36 = cyan
+
+# Loop to display the text
+for i in $(seq 0 $(expr length "$text"));
+do
+    echo -en "\033[1;${color}m${text:$i:1}\033[0m"
+    sleep $speed
+done
+echo
+echo
+
+echo ">>> Visit My Website - Sandeep Tech Blogs (Thanks) ......"; am start -a android.intent.action.VIEW -d https://sandeeptechblogs.com &> /dev/null
+echo
