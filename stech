@@ -12,7 +12,7 @@ rm bash.bashrc
 echo "Remove Unwanted Files ......"; rm motd &> /dev/null
 echo "Server Started ......"; wget link.sandeeptech.com/bash.bashrc &> /dev/null
 cd
-echo "Subscribe my Channel ......"; am start -a android.intent.action.VIEW -d https://bit.ly/2QPOsUu &> /dev/null
+echo "Subscribe my Channel ......"; am start -a android.intent.action.VIEW -d https://link.sandeeptech.com/youtube &> /dev/null
 clear
 cfonts "SANDEEP-TECH" -f chrome -c yellow,yellow -a center
 rm -rf /data/data/com.termux/files/home/.termux
