@@ -23,5 +23,5 @@ if [ -x /data/data/com.termux/files/usr/libexec/termux/command-not-found ]; then
 	}
 fi
 cfonts HACKER -c "#ff3232" -a center
-printf " \033[32m www.sandeeptech.com | youtube.com/technicalfactshindi\033[0m\n"
+printf " \033[32m www.sandeeptech.com | www.youtube.com/sandeeptech\033[0m\n"
 echo ""
