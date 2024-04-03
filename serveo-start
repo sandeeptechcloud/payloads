@@ -1,0 +1,9 @@
+#!/bin/bash
+cfonts ">> SANDEEP TECH <<" -f tiny -a left -g yellow,red
+read -p "Enter the desired port number (default is 8080): " port
+port=${port:-8080}
+echo ""
+echo "Connecting to serveo.net with port $port..."
+ssh -R 80:localhost:$port serveo.net
+echo ""
+termux-open-url "https://sandeeptech.com"
